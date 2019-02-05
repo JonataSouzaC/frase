@@ -6,4 +6,4 @@ threadsafe: false
 
 handlers:
 - url: /.*
-  script: frase.py
+  script: frase.app
