@@ -23,7 +23,7 @@ class FraseAleatoriaDoDia(webapp2.RequestHandler):
         self.response.out.write('{"frase": "%s", "autor": "%s"}' % (self.frases[i][0], self.frases[i][1]))
  
 mapeamento = [
-    ('/random', FraseAleatoriaDoDia),
+    ('/', FraseAleatoriaDoDia),
 ]
 app = webapp2.WSGIApplication(mapeamento)
 run_wsgi_app(app)
